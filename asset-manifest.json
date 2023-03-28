@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.344da138.css",
-    "main.js": "./static/js/main.6d4adee6.js",
+    "main.js": "./static/js/main.9aaa3db3.js",
     "static/media/about-01.jpg": "./static/media/about-01.9f2b9caffdb4b5002513.jpg",
     "static/media/bg-02.jpg": "./static/media/bg-02.7666f155f094c10d4b5a.jpg",
     "static/media/hero-01.jpg": "./static/media/hero-01.35a22c9d396517902983.jpg",
@@ -14,10 +14,10 @@
     "static/media/watchblackF.jpg": "./static/media/watchblackF.c10613804ba1f12e85a3.jpg",
     "index.html": "./index.html",
     "main.344da138.css.map": "./static/css/main.344da138.css.map",
-    "main.6d4adee6.js.map": "./static/js/main.6d4adee6.js.map"
+    "main.9aaa3db3.js.map": "./static/js/main.9aaa3db3.js.map"
   },
   "entrypoints": [
     "static/css/main.344da138.css",
-    "static/js/main.6d4adee6.js"
+    "static/js/main.9aaa3db3.js"
   ]
 }
