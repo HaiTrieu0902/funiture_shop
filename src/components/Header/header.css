@@ -1,0 +1,48 @@
+.header-container-main {
+    width: 100%;
+    border-bottom: 1px solid var(--color-boder);
+    background-color: var(--color-white);
+}
+.header-main-deskop {
+    width: 100%;
+}
+
+.menu-items:hover {
+    color: var(--color-bg-primary);
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+.header-section .active {
+    color: var(--color-bg-primary);
+}
+
+.header-navbar .active {
+    color: var(--color-bg-primary);
+}
+
+.header-navbar a {
+    font-size: 1.1rem;
+}
+
+.header-cart {
+    position: relative;
+}
+
+.header-quality {
+    position: absolute;
+}
+
+.header-quality div {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--color-bg-primary);
+    margin-top: -1.5rem;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+.header-quality p {
+    font-size: 1.1rem;
+    color: var(--color-white);
+}

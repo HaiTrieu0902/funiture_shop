@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --color-bg: #212f3f;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --color-light: rgba(255, 255, 255, 0.8);
+
+    --color-footer-bt: #e5e5e5;
+    --color-boder: #f1f2f2;
+    --color-bg-primary: #c19a83;
+    --transition: all 400ms ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
+    overflow-y: overlay;
+}
+
+.gap-10 {
+    gap: 1.25rem;
+}
+.gap-15 {
+    gap: 1.8rem;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a[href] {
+    color: var(--black);
+    text-decoration: none;
+}
+
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(22, 24, 35, 0.06);
+}
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
 }

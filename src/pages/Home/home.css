@@ -1,0 +1,92 @@
+.home-container {
+    margin-bottom: 10rem;
+}
+.home-sidebar img {
+    width: 100%;
+    height: 55rem;
+    object-fit: cover;
+}
+
+.home-sale-container {
+    top: 10%;
+    left: 5%;
+}
+
+.home-sale-list h5 {
+    font-size: 1.4rem;
+    opacity: 0.9;
+}
+
+.home-sale-list h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home-sale-list h3 {
+    font-size: 1.6rem;
+}
+.marquee-inner-wrapper {
+    margin-top: 6rem;
+    border: 1px solid var(--color-boder);
+}
+
+.marquee-img img {
+    width: 70%;
+    border: 1px solid var(--color-bg-primary);
+}
+
+.shop-category h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.shop_nerb {
+    margin-top: 4px;
+    display: block;
+    width: 60px;
+    border-bottom: 1px solid var(--color-bg-primary);
+    text-align: center;
+    align-items: center;
+}
+
+.category-items {
+    background-color: var(--color-boder);
+}
+
+.category-desc {
+    margin-top: -4rem;
+    width: 90%;
+    background-color: var(--color-white);
+    margin-bottom: 4rem;
+}
+.category-desc h4 {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.category-desc p {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    opacity: 0.7;
+    font-weight: 600;
+}
+
+.featured-contain {
+    background-color: var(--color-boder);
+}
+
+.featured-colors div {
+    border: 1px solid transparent;
+}
+.featured-colors div:hover {
+    border: 1px solid var(--color-bg-primary);
+}
+
+.featured-menu:hover .featured-abs {
+    right: 2rem;
+    transition: all 0.3s ease;
+}
+.color-choose {
+    color: var(--color-bg-primary);
+}

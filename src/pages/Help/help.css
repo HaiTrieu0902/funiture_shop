@@ -1,0 +1,18 @@
+.story-container {
+    background-color: var(--color-boder);
+}
+
+.contact_container {
+    background-color: var(--color-white);
+    border-radius: 1.5rem;
+}
+
+.form-contact {
+    background-color: transparent !important;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.form-contact:focus {
+    border: 1px solid var(--color-bg-primary);
+}

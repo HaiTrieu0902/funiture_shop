@@ -1,0 +1,30 @@
+.form-tracker {
+    border: 1px solid var(--color-boder);
+    border-radius: 5px;
+}
+
+.form-tracker div {
+    width: 550px;
+}
+
+.form-tracker .login-tracker {
+    margin-top: 2rem;
+    width: 100%;
+    border: 1px solid var(--color-boder);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+.form-checked_tracker {
+    border: 1px solid var(--color-bg-primary);
+    outline: var(--color-bg-primary);
+    background-color: var(--color-bg-primary);
+}
+
+.form-tracker a:hover {
+    color: black !important;
+}
+.form-checked_tracker:checked {
+    border: 1px solid var(--color-bg-primary);
+    outline: var(--color-bg-primary);
+    background-color: var(--color-bg-primary);
+}

@@ -1,0 +1,60 @@
+.footer-container {
+    background-color: var(--color-boder);
+    border-top: 1px solid var(--color-footer-bt);
+}
+
+.footer-menu-list h4 {
+    margin-bottom: 4.5rem;
+}
+
+.footer-menu-list h4 {
+    font-size: 1.4rem;
+    color: var(--color-bg);
+}
+.footer-menu-list a {
+    font-size: 1.4rem !important;
+    color: var(--color-bg-primary);
+}
+
+.footer-menu-list a:hover {
+    color: var(--color-bg);
+}
+
+.footer-menu-list span {
+    color: var(--color-bg);
+}
+
+.footer-menu-list input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: none;
+    font-family: inherit;
+    background-color: var(--color-white);
+    height: 35px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-main-link {
+    border-top: 1px solid var(--color-footer-bt);
+    margin-top: 12rem;
+}
+
+.footer-copyright {
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.footer-social a {
+    font-size: 2rem;
+}
+
+.footer-social a:hover {
+    color: var(--color-bg-primary);
+    transition: all 1s ease;
+    transform: scale(1.3);
+}

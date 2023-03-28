@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+.button {
+    height: 35px;
+    width: 90px;
+    border-radius: 4px;
+    color: var(--color-white);
+    font-size: 1.4rem;
+}
+.button_2 {
+    height: 40px;
+    width: 120px;
+    border-radius: 4px;
+    color: var(--color-white);
+    font-size: 1.4rem;
+}
+.button-primary {
+    background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-primary:hover {
+    background-color: var(--color-bg-primary);
+}
+@import url('https://cdn.syncfusion.com/ej2/material.css');
+
+.fixed-header {
+    padding-top: 15rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wide {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.col-3-1 {
+    width: 23.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.product-show {
+    border: 1px solid var(--color-bg-primary) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
