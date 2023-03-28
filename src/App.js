@@ -21,7 +21,7 @@ import DetailProduct from './components/Products/DetailProduct';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 const App = () => {
-    const { themeSettings, setThemeSettings } = useStateContext();
+    const { themeSettings, currentColor, setThemeSettings } = useStateContext();
     return (
         <>
             <BrowserRouter>
@@ -31,7 +31,7 @@ const App = () => {
                             type="button"
                             onClick={() => setThemeSettings(true)}
                             className="text-3xl p-3 hover:drop-shadow-xl hover:bg-light-gray text-white"
-                            style={{ background: '#c19a83', borderRadius: '50%' }}
+                            style={{ background: currentColor, borderRadius: '50%' }}
                         >
                             <FiSettings></FiSettings>
                         </button>

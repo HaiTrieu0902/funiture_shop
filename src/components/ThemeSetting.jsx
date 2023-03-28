@@ -6,7 +6,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { useStateContext } from './../contexts/ContextProvider';
 import { themeColors } from './../data/data';
 const ThemeSettings = () => {
-    const { setThemeSettings } = useStateContext();
+    const { setColor, currentColor, setThemeSettings } = useStateContext();
     return (
         <div style={{ zIndex: '1000' }} className="bg-half-transparent w-screen fixed nav-item top-0 righ-0">
             <div className="float-right h-screen dark:text-gray-200 bg-white dark:[#484B52] w-400">
@@ -64,11 +64,11 @@ const ThemeSettings = () => {
                                         type="button"
                                         className="h-9 w-9 rounded-full cursor-pointer"
                                         style={{ backgroundColor: item.color }}
-                                        onClick={() => {}}
+                                        onClick={() => setColor(item.color)}
                                     >
                                         <BsCheck
                                             className={`ml-2 text-2xl text-white ${
-                                                item.color === true ? 'block' : ' hidden'
+                                                item.color === currentColor ? 'block' : ' hidden'
                                             }`}
                                         />
                                     </button>

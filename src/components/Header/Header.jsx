@@ -4,8 +4,10 @@ import './header.css';
 import { FaSearch } from 'react-icons/fa';
 import { HiShoppingCart } from 'react-icons/hi';
 import Logo from '../../data/logo-regular.png';
-
+import { useStateContext } from './../../contexts/ContextProvider';
 const Header = () => {
+    const { currentColor } = useStateContext();
+    console.log(currentColor);
     return (
         <header style={{ zIndex: '999' }} className="header-container-main fixed">
             <div className="header-main-deskop py-5">
@@ -20,13 +22,13 @@ const Header = () => {
                         </div>
                         <div className="header-section col-xl-4 col-lg-5">
                             <div className="d-flex align-items-center gap-15">
-                                <NavLink className="menu-items text-black fs-4" to="/shop">
+                                <NavLink className={`menu-items  text-black fs-4`} to="/shop">
                                     SHOP ALL
                                 </NavLink>
-                                <NavLink className="menu-items text-black fs-4" to="/decor">
+                                <NavLink className={`menu-items text-black fs-4`} to="/decor">
                                     DECOR
                                 </NavLink>
-                                <NavLink className="menu-items text-black fs-4" to="/office">
+                                <NavLink className="menu-items  text-black fs-4" to="/office">
                                     OFFICE
                                 </NavLink>
                                 <NavLink className="menu-items text-black fs-4" to="/living-room">
@@ -59,11 +61,11 @@ const Header = () => {
                                 </NavLink>
                                 <button className="header-cart">
                                     <div className="header-quality">
-                                        <div>
+                                        <div style={{ backgroundColor: currentColor }}>
                                             <p>0</p>
                                         </div>
                                     </div>
-                                    <HiShoppingCart className="fs-1 active" />
+                                    <HiShoppingCart style={{ color: currentColor }} className="fs-1" />
                                 </button>
                             </div>
                         </div>
