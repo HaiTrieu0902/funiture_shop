@@ -182,7 +182,7 @@ export const Featuredproducts = [
 
 export const ProductTest = [
     {
-        name: 'Watch Foudation',
+        name: 'Chair Ontop',
         priceblack: '$356 - $421',
         pricegold: '$143 - $340',
         pricebronze: '$336 - $450',
@@ -194,7 +194,7 @@ export const ProductTest = [
         colorbroze: '#8f6453',
     },
     {
-        name: 'Water Container',
+        name: 'Holdings Cross',
         priceblack: '$610 - $900',
         pricegold: '$200 - $700',
         pricebronze: '$300 - $700',
@@ -206,7 +206,7 @@ export const ProductTest = [
         colorbroze: '#8f6453',
     },
     {
-        name: 'Water Container',
+        name: 'Chari Founder',
         priceblack: '$610 - $900',
         pricegold: '$200 - $700',
         pricebronze: '$300 - $700',
@@ -231,7 +231,7 @@ export const ProductTest = [
     },
 
     {
-        name: 'Watch Foudation',
+        name: 'Watch Rpod',
         priceblack: '$356 - $421',
         pricegold: '$200 - $700',
         pricebronze: '$300 - $700',

@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useStateContext } from '../contexts/ContextProvider';
 
 const BreadCrumb = (props) => {
+    const { sortOption, setSortOption } = useStateContext();
+
     const { title, element } = props;
     return (
         <div className="breadcrumb py-4">
@@ -22,7 +25,11 @@ const BreadCrumb = (props) => {
                         <p className="text-gray-500 text-2xl">{element}</p>
                         <div className="">
                             <form action="">
-                                <select name="shop-order" id="shop-oder">
+                                <select
+                                    onChange={(e) => setSortOption(e.target.value)}
+                                    name="shop-order"
+                                    id="shop-oder"
+                                >
                                     <option value="default" selected="selected">
                                         Default sorting
                                     </option>

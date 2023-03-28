@@ -5,9 +5,38 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { HiShoppingCart } from 'react-icons/hi';
 import { IoEyeSharp } from 'react-icons/io5';
 import { ProductTest } from './../../data/data';
+import { useStateContext } from '../../contexts/ContextProvider';
 const Product = () => {
     const [selectedColor, setSelectedColor] = useState('black');
-    //const [sortOption, setSortOption] = useState("default");
+    const { sortOption } = useStateContext();
+    console.log(sortOption);
+
+    const compareNameAsc = (a, b) => {
+        if (a.name < b.name) {
+            return -1;
+        } else if (a.name > b.name) {
+            return 1;
+        } else {
+            return 0;
+        }
+    };
+
+    const compareNameDesc = (a, b) => {
+        if (a.name > b.name) {
+            return -1;
+        } else if (a.name < b.name) {
+            return 1;
+        } else {
+            return 0;
+        }
+    };
+    let sortedProducts = [...ProductTest];
+
+    if (sortOption === 'low' || sortOption === 'popularity') {
+        sortedProducts = [...ProductTest].sort(compareNameAsc);
+    } else if (sortOption === 'high' || sortOption === 'rating') {
+        sortedProducts = [...ProductTest].sort(compareNameDesc);
+    }
     const handleClick = (color) => {
         setSelectedColor(color);
     };
@@ -15,7 +44,7 @@ const Product = () => {
         <>
             <div className="col-12 mt-14">
                 <div className="grid gap-10 grid-cols-3">
-                    {ProductTest.map((item, index) => (
+                    {sortedProducts.map((item, index) => (
                         <div key={index} className="featured-contain">
                             <div className="featured-menu relative overflow-hidden">
                                 <div className="absolute top-10 left-10">
