@@ -13,7 +13,7 @@ const Header = () => {
                     <div className="row align-items-center">
                         <div className="header-logo col-xl-4 col-lg-3">
                             <div className="header-logo-img">
-                                <Link to="/">
+                                <Link to="/home">
                                     <img src={Logo} alt="" />
                                 </Link>
                             </div>
