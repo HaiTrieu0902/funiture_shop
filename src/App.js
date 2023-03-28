@@ -18,6 +18,8 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { useStateContext } from './contexts/ContextProvider';
 import ThemeSettings from './components/ThemeSetting';
 import DetailProduct from './components/Products/DetailProduct';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 const App = () => {
     const { themeSettings, setThemeSettings } = useStateContext();
     return (
@@ -36,8 +38,9 @@ const App = () => {
                     </TooltipComponent>
                 </div>
                 {themeSettings && <ThemeSettings />}
+                <Header />
                 <Routes>
-                    <Route element={<Layout />}>
+                    {/* <Route element={<Layout />}>
                         <Route index element={<Home />}></Route>
                         <Route path="shop" element={<Shop />}></Route>
                         <Route path="decor" element={<Decor />}></Route>
@@ -50,8 +53,21 @@ const App = () => {
                         <Route path="help" element={<Help />}></Route>
                         <Route path="login" element={<Login />}></Route>
                         <Route path="detail" element={<DetailProduct />}></Route>
-                    </Route>
+                    </Route> */}
+                    <Route index element={<Home />}></Route>
+                    <Route path="shop" element={<Shop />}></Route>
+                    <Route path="decor" element={<Decor />}></Route>
+                    <Route path="office" element={<Office />}></Route>
+                    <Route path="living-room" element={<LivingRoom />}></Route>
+                    <Route path="bedroom" element={<BedRoom />}></Route>
+                    <Route path="story" element={<Story />}></Route>
+                    <Route path="contact" element={<Contact />}></Route>
+                    <Route path="tracker" element={<Tracker />}></Route>
+                    <Route path="help" element={<Help />}></Route>
+                    <Route path="login" element={<Login />}></Route>
+                    <Route path="detail" element={<DetailProduct />}></Route>
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </>
     );
